@@ -43,11 +43,15 @@ python exec.py -s dvwa -m -g 'exp'
 
 ### Current Stage
 
+[![asciinema CLI demo](https://asciinema.org/a/wfeDhk38EzVCnQKiZpePkmCHe.svg)](https://asciinema.org/a/wfeDhk38EzVCnQKiZpePkmCHe?autoplay=1)
+
+[![asciinema CLI demo](https://asciinema.org/a/AOosfNg2XshF9ztfLeLrcqW05.svg)](https://asciinema.org/a/AOosfNg2XshF9ztfLeLrcqW05?autoplay=1)s
+
 ```bash
 python monitor/dvwa.py --range 100  # capture network for 100 seconds
 python monitor/dvwa.py -r 100
 
-python generator/dvwa_gen.py  # generate exploit data: only for sqli section
+python generator/dvwa_gen.py fuzz  # generate fuzz data: only for sqli section
 ```
 
 The first screenshot shows that http monitor (network capturer) works fine.
