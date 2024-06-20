@@ -5,6 +5,7 @@
 output
 output/*
 *.log
+.__pycache__/
 
 ### Linux ###
 *~

@@ -1,6 +1,18 @@
 import requests
 from urllib.parse import urlencode
 
+"""SQL Injection Point: id parameter in the URL
+normal id:
+- phone_number: 13912345678
+- identity_card: 110101199001011234
+- username: user111
+fuzz id:
+- normal ones
+- potential payloads
+exploit id:
+- sql injection usage payload
+- blind sqli, etc
+"""
 
 def sql_injection_request(cookies, user_token, id):
     base_url = r'http://127.0.0.1:8000/vulnerabilities/sqli/'
