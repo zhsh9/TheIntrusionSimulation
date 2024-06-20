@@ -30,11 +30,11 @@ How to use simulated data?
 
 ### TODO
 
-As DVWA model as an exmaple:
+As DVWA model as an exmaple (main function as the entry point):
 
 ```bash
 ./system/dvwa/start.sh
-python exec.py --system dvwa --monitor --generator 'all'
+python exec.py --serve dvwa --monitor --generate 'all'
 python exec.py -s dvwa -m -g 'all'
 python exec.py -s dvwa -m -g 'normal'
 python exec.py -s dvwa -m -g 'fuzz'
@@ -45,7 +45,7 @@ python exec.py -s dvwa -m -g 'exp'
 
 [![asciinema CLI demo](https://asciinema.org/a/wfeDhk38EzVCnQKiZpePkmCHe.svg)](https://asciinema.org/a/wfeDhk38EzVCnQKiZpePkmCHe?autoplay=1)
 
-[![asciinema CLI demo](https://asciinema.org/a/AOosfNg2XshF9ztfLeLrcqW05.svg)](https://asciinema.org/a/AOosfNg2XshF9ztfLeLrcqW05?autoplay=1)s
+[![asciinema CLI demo](https://asciinema.org/a/AOosfNg2XshF9ztfLeLrcqW05.svg)](https://asciinema.org/a/AOosfNg2XshF9ztfLeLrcqW05?autoplay=1)
 
 ```bash
 python monitor/dvwa.py --range 100  # capture network for 100 seconds
